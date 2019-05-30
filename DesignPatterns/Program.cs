@@ -1,19 +1,23 @@
 ﻿using DesignPatterns.Patterns;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns
 {
     class Program
     {
-        static Factory factory = new Factory();
-        
         static void Main(string[] args)
         {
-            factory.Init();
+            Factory
+                .Initialize()
+                .CreateEmployee(Employee.Permanent, 100);
+
+            AbstractFactory
+                .Initialize(BrandType.Nokia)
+                .GetSmartPhone()
+                .GetModelSpecification();
+
+            Console.Write(Singleton.Instance.Counter);
+            Console.Write(Singleton.Instance.Counter);
         }
     }
 }

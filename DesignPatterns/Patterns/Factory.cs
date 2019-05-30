@@ -1,26 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 
 namespace DesignPatterns.Patterns
 {
+    
     public class Factory
     {
-        public void Init()
+        public static Factory Initialize() => new Factory();
+
+        public IEmployee CreateEmployee(Employee employeeType, int salary)
         {
-            var employees = new Dictionary<Employee, IEmployee>() {
+            var employees = new Dictionary<Employee, EmployeeFactory>() {
                 {
-                    Employee.Permanent, new PermanentEmployeeFactory().Create(100)
+                    Employee.Permanent, new PermanentEmployeeFactory()
                 },
                 {
-                    Employee.Contract, new ContractEmployeeFactory().Create(50)
+                    Employee.Contract, new ContractEmployeeFactory()
                 }
             };
 
-            foreach (var employee in employees)
-            {
-                Console.WriteLine($"{employee.Key} - Salary {employee.Value.Salary}");
-            }
+            return employees[employeeType].Create(salary);
         }
     }
 
