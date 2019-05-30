@@ -1,0 +1,7 @@
+D:\Bitbucket repository\Patterns\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe.config
+D:\Bitbucket repository\Patterns\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe
+D:\Bitbucket repository\Patterns\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.pdb
+D:\Bitbucket repository\Patterns\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.csprojAssemblyReference.cache
+D:\Bitbucket repository\Patterns\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.csproj.CoreCompileInputs.cache
+D:\Bitbucket repository\Patterns\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.exe
+D:\Bitbucket repository\Patterns\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.pdb
